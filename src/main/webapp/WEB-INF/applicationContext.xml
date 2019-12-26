@@ -11,9 +11,10 @@
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
-
+	
+	<!-- 비즈니스 로직 설정 // root 설정이 된다. -->
+	
 	<context:annotation-config />
-
 	<!-- 어노테이션을 지정 -->
 	<context:component-scan	base-package="com.bigdata2019.email.repository">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository" />
